@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainLabel {
+    margin: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    padding: 24px;
+    background-color: #FFF;
+}
+
+.img-profile {
+    width: 152px;
+    height: 152px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+}
+
+.nameStyle {
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 2.4rem;
+    line-height: 1.33333;
+    color: rgba(0,0,0,.9);
+}
