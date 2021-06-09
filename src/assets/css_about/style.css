@@ -245,7 +245,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 /*---------- Main Wrapper css Start -------*/
 .prt_main_wrapper{
 	position:relative;
-	overflow-x:hidden;
+	/* overflow-x:hidden; */
 }
 .prt_main_wrapper::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
