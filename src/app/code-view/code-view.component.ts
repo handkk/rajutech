@@ -8,12 +8,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class CodeViewComponent implements OnInit {
 
+  log: string = '';
   constructor(
     private title: Title
   ) { }
 
   ngOnInit(): void {
     this.title.setTitle('RK - Code View');
+    this.log = `window.console.log = function(){}`
   }
 
 }
