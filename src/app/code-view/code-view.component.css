@@ -6,3 +6,13 @@
   text-align: center;
 }
 
+.copy-style {
+  float: right;
+  font-size: 15px;
+  color: #717171;
+  margin: 5px 5px 0px 0px;
+}
+
+.copy-style:hover {
+  color: blue;
+}

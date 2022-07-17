@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+// import * as moment from 'moment';
+
 
 @Component({
   selector: 'app-code-view',
@@ -8,14 +10,33 @@ import { Title } from '@angular/platform-browser';
 })
 export class CodeViewComponent implements OnInit {
 
-  log: string = '';
+  references: any[] = [
+    {
+      title: 'Console log Remove',
+      code: `window.console.log = function(){}`
+    },
+    {
+      title: 'Date format with moment NPM',
+      code: `
+      const date = new Date();
+      const format1 = "YYYY-MM-DD HH:mm:ss";
+      const format2 = "YYYY-MM-DD";
+      const format3 = 'MM/DD/YYYY';
+      const datef = moment().format(format1);
+      `
+    }
+  ]
+
   constructor(
     private title: Title
   ) { }
 
   ngOnInit(): void {
     this.title.setTitle('RK - Code View');
-    this.log = `window.console.log = function(){}`
+  }
+
+  copyCode(copyText: string) {
+    navigator.clipboard.writeText(copyText);
   }
 
 }

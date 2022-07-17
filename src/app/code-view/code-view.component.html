@@ -3,8 +3,9 @@
     <h1 class="title">References</h1>
   </div>
   <hr />
-  <div>
-    <h3>Console log Remove</h3>
-    <pre>{{log}}</pre>
+  <div *ngFor="let item of references;">
+    <h3>{{item.title}} <a class="copy-style" title="Copy" (click)="copyCode(item.code)"><i class="icon-copy"></i></a></h3>
+    <pre>{{item.code}}</pre>
+    <hr />
   </div>
 </div>
